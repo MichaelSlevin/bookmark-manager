@@ -16,6 +16,9 @@ As a user of the app
 So that I can revisit my booked-marked sites
 I should be able to see a list my bookmarks
 `
+
+![image of US1]
+(./Images/US1.png)
 ```sequence'
 Title: US1: List bookmarks
 Controller->Model: Request list_bookmarks
