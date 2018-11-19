@@ -15,3 +15,13 @@
 As a user of the app
 So that I can revisit my booked-marked sites
 I should be able to see a list my bookmarks
+`
+```sequence'
+Title: US1: List bookmarks
+Controller->Model: Request list_bookmarks
+Model->Database: Retrieve_bookmarks(user)
+Database->Model: return query results
+Model->Controller: return booksmarks as array
+Controller->View: initiate erb with bookmarks
+```
+`
